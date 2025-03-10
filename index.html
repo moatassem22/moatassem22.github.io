@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Hub</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#add-recipe">Add Recipe</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h2>Welcome to Recipe Hub</h2>
+            <p>Your one-stop destination for delicious recipes from around the globe.</p>
+            <a href="#recipes" class="cta-button">Explore Recipes</a>
+        </section>
+
+        <!-- Recipes Section -->
+        <section id="recipes">
+            <h2>Our Top Recipes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recipe Name</th>
+                        <th>Category</th>
+                        <th>Cooking Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti Carbonara</td>
+                        <td>Main Course</td>
+                        <td>30 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Curry</td>
+                        <td>Main Course</td>
+                        <td>45 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Cake</td>
+                        <td>Dessert</td>
+                        <td>1 hour</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add Recipe Section -->
+        <section id="add-recipe">
+            <h2>Add Your Own Recipe</h2>
+            <form>
+                <label for="recipe-name">Recipe Name:</label><br>
+                <input type="text" id="recipe-name" name="recipe-name" placeholder="E.g., Pancakes" required><br><br>
+
+                <label for="category">Category:</label><br>
+                <select id="category" name="category">
+                    <option value="main-course">Main Course</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="appetizer">Appetizer</option>
+                </select><br><br>
+
+                <label for="time">Cooking Time:</label><br>
+                <input type="text" id="time" name="time" placeholder="E.g., 30 minutes" required><br><br>
+
+                <label for="instructions">Instructions:</label><br>
+                <textarea id="instructions" name="instructions" rows="5" placeholder="Describe the recipe steps here..." required></textarea><br><br>
+
+                <button type="submit">Submit Recipe</button>
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Recipe Hub, we believe that great food brings people together. Our mission is to provide a platform where food lovers can discover, share, and create amazing recipes. Join us on this delicious journey!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Recipe Hub - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
